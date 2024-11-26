@@ -24,4 +24,7 @@ public interface ProductoDao extends JpaRepository<Producto, Long> {
     
     //Ejemplo para la tarea
     public List<Producto> findByDescripcionContainingOrderByPrecio(String descripcion);
+    
+    //TareaS9
+    public List<Producto> findByDetalleStartingWithOrderByPrecio(String detalle);
 }

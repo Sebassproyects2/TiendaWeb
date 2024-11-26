@@ -28,6 +28,9 @@ public interface ProductoService {
      //Lista de productos utilizando consultas con SQL Nativo
     public List<Producto> metodoNativo(double precioInf, double precioSup);
 
-    // Para la tarea semana9
+    // Ejemplo tarea semana9
     public List<Producto> buscarPorNombre(String nombre);
+    
+    // Tarea semana9
+    public List<Producto> buscarPorDetalle(String detalle);
 }

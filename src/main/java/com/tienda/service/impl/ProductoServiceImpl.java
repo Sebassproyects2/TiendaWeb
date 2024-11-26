@@ -75,5 +75,12 @@ public class ProductoServiceImpl implements ProductoService{
         return productoDao.findByDescripcionContainingOrderByPrecio(nombre);
     }
 
+    //Ejemplo tareaS9
+    @Override
+    @Transactional(readOnly=true)
+    public List<Producto> buscarPorDetalle(String detalle) {
+        return productoDao.findByDetalleStartingWithOrderByPrecio(detalle);
+    }
+
     
 }

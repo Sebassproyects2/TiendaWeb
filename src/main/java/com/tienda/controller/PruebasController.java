@@ -92,4 +92,14 @@ public class PruebasController {
         model.addAttribute("productName", nombre);
         return "/pruebas/listado2";
     }
+    
+    //Tarea S9
+    @PostMapping("/QueryDescripcion")
+    public String consultaQueryDescripcion(@RequestParam(value = "productDescripcion") String descripcion, Model model) {
+        List<Producto> productos = productoService.buscarPorNombre(descripcion);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("productName", descripcion);
+        return "/pruebas/listado2";
+    }
 }

@@ -184,6 +184,36 @@
                               
                     </form>
                     <div class="col-md-3"></div>
+                    
+<!--                    TareaS9-->
+
+                     <div class="row py-3">
+                    <div class="col-md-6"></div>
+                    <!-- *********RUTA A QueryName********** -->
+                   <form method="POST" th:action="@{/pruebas/QueryDescripcion}" 
+                        class="was-validated">
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                                <input type="text" class="form-control"
+                                       th:name="ProductDetalle"
+                                       th:Value="${productDetalle}"
+                                       placeholder="Detalle del producto a buscar" 
+                                       aria-label="Username" 
+                                       aria-describedby="basic-addon1"
+                                       required>
+                            </div>
+                                
+                            </div>
+                       <div class="card-footer text-center">
+                                <button type="submit" class="btn btn-warning">
+                                    <i class="fas fa-check"></i> Buscar
+                                </button>
+                            </div>
+                        </div>
+                              
+                    </form>
+                    <div class="col-md-3"></div>
                 
             </div>
         </section> 
